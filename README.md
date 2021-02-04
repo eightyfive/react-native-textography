@@ -11,20 +11,26 @@ import { Caption, Subheading, Text, Title } from "react-native-textography";
 
 function App() {
   return (
-    <View>
+    <>
+      <Text>Body Text</Text>
+
       <Text em>Emphasized Text</Text>
+
       <Caption>Small Text</Caption>
+
       <Subheading>Small Title</Subheading>
+
       <Title>Title</Title>
+
       <Title large>Large Title</Title>
 
       <Text type={isAndroid ? "display4" : "caption2"}>Weird Text</Text>
-    </View>
+    </>
   );
 }
 ```
 
-## Reference
+## Text styles reference
 
 | Component            | Android    | iOS                  |
 | -------------------- | ---------- | -------------------- |
@@ -39,15 +45,16 @@ function App() {
 | `<Title large />`    | display1   | largeTitleEmphasized |
 | `<Title large em />` | display1   | largeTitleEmphasized |
 
+> **Note**: The `em` property is mostly ignored on Android.
+
 ## The `white` property
 
-The `white` property adds the 'White' suffix to the current text style name:
+The `white` property adds the `White` suffix to the current text style name:
 
 ```js
 // Android
 <Text white /> // --> body1White
 <Title large white /> // --> display1White
-// ...
 
 // iOS
 <Text white /> // --> body1White
