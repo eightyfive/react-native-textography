@@ -49,7 +49,7 @@ function App() {
 
 ## The `white` property
 
-The `white` property adds the `White` suffix to the current text style name:
+The `white` property adds the "White" suffix to the current text style name:
 
 ```js
 // Android
@@ -57,7 +57,7 @@ The `white` property adds the `White` suffix to the current text style name:
 <Title large white /> // --> display1White
 
 // iOS
-<Text white /> // --> body1White
+<Text white /> // --> bodyWhite
 <Title large white /> // --> largeTitleEmphasizedWhite
 // ...
 ```
