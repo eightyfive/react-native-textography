@@ -1,6 +1,6 @@
 {
   "name": "react-native-textography",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Native Text, Title & Caption typography",
   "main": "index.js",
   "scripts": {},
