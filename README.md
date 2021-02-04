@@ -1,6 +1,6 @@
 # react-native-textography
 
-Glorified helper around https://github.com/hectahertz/react-native-typography.
+Glorified helper around [`react-native-typography`](https://github.com/hectahertz/react-native-typography).
 
 The library simply uses [Material Design](https://github.com/hectahertz/react-native-typography#material-design) text styles on Android and [iOSUIKit](https://github.com/hectahertz/react-native-typography#iosuikit) text styles on iOS.
 
