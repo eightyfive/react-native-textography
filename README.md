@@ -24,41 +24,7 @@ function App() {
 }
 ```
 
-## The `em` property
-
-### Android
-
-The `em` property is mostly ignored on Android unless used with the `<Text />` component, it will then use the `body2` Android text style instead of the `body1`.
-
-```js
-<Text em /> // --> body2
-```
-
-### iOS
-
-On iOS it always adds the suffix `Emphasized` to the current chosen iOS text style:
-
-```js
-<Caption em /> // --> footnoteEmphasized
-<Text em /> // --> bodyEmphasized
-<Suheading em /> // --> subheadEmphasized
-<Title em /> // --> title3Emphasized
-```
-
-## Weights
-
-For convenience you can specify [weight](https://github.com/hectahertz/react-native-typography#system-weights) on all components:
-
-```js
-<Text thin />
-<Caption light />
-<Title regular />
-<Text semibold />
-<Text bold />
-// ...
-```
-
-## Text style names reference
+## Reference
 
 | Component            | Android    | iOS                  |
 | -------------------- | ---------- | -------------------- |
@@ -72,3 +38,32 @@ For convenience you can specify [weight](https://github.com/hectahertz/react-nat
 | `<Title em />`       | title      | title3Emphasized     |
 | `<Title large />`    | display1   | largeTitleEmphasized |
 | `<Title large em />` | display1   | largeTitleEmphasized |
+
+## The `white` property
+
+The `white` property adds the 'White' suffix to the current text style name:
+
+```js
+// Android
+<Text white /> // --> body1White
+<Title large white /> // --> display1White
+// ...
+
+// iOS
+<Text white /> // --> body1White
+<Title large white /> // --> largeTitleEmphasizedWhite
+// ...
+```
+
+## Weights
+
+For convenience you can specify the [font weight](https://github.com/hectahertz/react-native-typography#system-weights) on all components:
+
+```js
+<Text thin />
+<Caption light />
+<Title regular />
+<Text semibold />
+<Subheading bold />
+// ...
+```
